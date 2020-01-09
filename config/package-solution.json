@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "activity-extension-sp-2019-on-prem-client-side-solution",
+    "id": "9f4b67e6-a07d-4b8d-b8fe-c97a4e14b109",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "4c0f3a74-4afa-4a60-b2a1-92bdfeaeae1e",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/activity-extension-sp-2019-on-prem.sppkg"
+  }
+}

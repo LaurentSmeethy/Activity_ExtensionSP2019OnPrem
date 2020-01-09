@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "branding-rgds-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/brandingRgds/BrandingRgdsApplicationCustomizer.js",
+          "manifest": "./src/extensions/brandingRgds/BrandingRgdsApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "BrandingRgdsApplicationCustomizerStrings": "lib/extensions/brandingRgds/loc/{locale}.js"
+  }
+}

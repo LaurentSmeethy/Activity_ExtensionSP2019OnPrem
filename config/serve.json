@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "http://intratest.infra.energie.local/SitePages/Home.aspx",
+      "customActions": {
+        "f081f165-3810-4fe6-ad28-ab3921dfca20": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message",
+            "cssUrl": "/Style%20Library/custom.css"
+          }
+        }
+      }
+    },
+    "brandingRgds": {
+      "pageUrl": "http://intratest.infra.energie.local/SitePages/Home.aspx",
+      "customActions": {
+        "f081f165-3810-4fe6-ad28-ab3921dfca20": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message",
+            "cssUrl": "/Style%20Library/custom.css"
+          }
+        }
+      }
+    }
+  }
+}
