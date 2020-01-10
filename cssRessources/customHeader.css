@@ -1,0 +1,121 @@
+  /* Displaying Groupe RGDS logo + banner + hiding title*/
+  .ms-siteLogoContainerOuter{
+    width: 150px!important;
+    height: 52px!important;
+    background: url('/Style%20Library/img/rgds.png');
+    background-size: 100% 100%;
+    border: none!important;
+  }
+  .ms-siteHeader-siteInfo{
+    visibility: hidden;
+  }
+  .ms-compositeHeader{
+    background: url('/Style%20Library/img/tbg.png');
+  }
+  .ms-siteLogo-actual{
+    display:none!important;
+  }
+  /* Banner adjustment */
+  .ms-compositeHeader-siteAndActionsContainer{
+    margin-top: 0px!important;
+  }
+  .ms-compositeHeader{
+    padding: 20px 24px!important;
+    height:110px!important;
+  }
+  /* Replacing + Restyling horizontal nav bar  */
+  .ms-HorizontalNav:not(.ms-ContextualMenu-container){
+    position: absolute!important;
+    bottom: 0px!important;
+    left:-70px;
+    width:100%;
+    background: rgba(0, 85, 148, 1);
+  }
+  /* .ms-HorizontalNav{
+    position: absolute!important;
+    bottom: 0px!important;
+    left:-70px;
+    background:rgba(37, 119, 177, 1);
+    width: 100%;
+  } */
+  .ms-HorizontalNav .ms-HorizontalNavItem-link{
+    font-weight: 600;
+    font-size: 12px;
+    color:white;
+  }
+  .ms-HorizontalNavItem-link:hover{
+    font-weight: 600;
+    font-size: 12px;
+    color:white;
+  }
+  .ms-HorizontalNav-chevronDown{
+    color:white;
+  }
+  .ms-HorizontalNavItems{
+    padding: 5px 10px;
+  }
+  /* Replacing Search bar */
+  .ms-searchux-searchbox{
+    position: absolute;
+    bottom: -4px;
+    transform: scale(0.7);
+    right: 20px;
+  }
+
+  /* Moving 'Share site' commands */
+  .ms-compositeHeader-addnCommands{
+    margin-top: -10px;
+  }
+
+
+  .CanvasZone{
+    margin: 0!important;
+    max-width: 100%;
+  }
+
+  /* Blue line above WP */
+  /* .CanvasZone > .CanvasSection:first-child > .ControlZone div[class^="webPartChrome"]{
+    background: rgba(0, 85, 148, 1);
+    color: white;
+  }
+  div[class^="webPartHeader"] div[class^="title"]{
+    font-weight: 700;
+    padding-left: 15px!important;
+    color: white;
+    font-size: 15px;
+    padding:5px 0px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+
+  /* div[class*="compactCard"]:hover{
+    border: none!important;
+    background:transparent;
+  }
+  div[class^="compactCard"]{
+    border: none!important;
+    height: 100%!important;
+  }
+  div[class*="lessText"]{
+    color: white!important;
+    margin-top: 0!important;
+  }
+  div[class*="cardText"]:hover{
+    background:transparent;
+  }
+  a[class*="compactCardWrapper"]:hover{
+    background:transparent!important;
+    border-color: transparent!important;
+    text-decoration: underline!important;
+    color:white!important;
+  }
+  
+  .ms-CompactCard-icon-wrapper{
+    display: none;
+  }
+  
+  .CanvasZone > .CanvasSection:first-child .ControlZone {
+    padding:0!important;
+    margin-top: 0!important;
+  }
+  .CanvasZone > .CanvasSection:first-child {
+    margin-top: 32px!important;
+  }  */

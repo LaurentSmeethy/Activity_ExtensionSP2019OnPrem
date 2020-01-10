@@ -27,24 +27,28 @@ export default class BrandingRgdsApplicationCustomizer
 
   @override
   public onInit(): Promise<void> {
-   // Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
-
-    let message: string = this.properties.testMessage;
-    if (!message) {
-      message = '(No properties were provided.)';
+    console.log(this.context.pageContext.web.absoluteUrl);
+    // tslint:disable-next-line: triple-equals
+    if (window.location.href == this.context.pageContext.web.absoluteUrl ||
+      window.location.href.indexOf( this.context.pageContext.web.absoluteUrl + '/SitePages/Home.aspx') >= 0 ) {
+      // inject the style sheet
+      // tslint:disable-next-line: no-any
+      const head: any = document.getElementsByTagName('head')[0] || document.documentElement;
+      const customHomeStyle: HTMLLinkElement = document.createElement('link');
+      customHomeStyle.href = 'http://intratest.infra.energie.local/Style%20Library/customHome.css';
+      customHomeStyle.rel = 'stylesheet';
+      customHomeStyle.type = 'text/css';
+      head.insertAdjacentElement('beforeEnd', customHomeStyle);
+    } else {
+      // inject the style sheet
+      // tslint:disable-next-line: no-any
+      const head: any = document.getElementsByTagName('head')[0] || document.documentElement;
+      const customHeaderStyle: HTMLLinkElement = document.createElement('link');
+      customHeaderStyle.href = 'http://intratest.infra.energie.local/Style%20Library/customHeader.css';
+      customHeaderStyle.rel = 'stylesheet';
+      customHeaderStyle.type = 'text/css';
+      head.insertAdjacentElement('beforeEnd', customHeaderStyle);
     }
-
-    // const cssUrl: string = this.properties.cssUrl;
-    console.log('loaded ' + this.properties.cssUrl);
-    // inject the style sheet
-    // tslint:disable-next-line: no-any
-    const head: any = document.getElementsByTagName('head')[0] || document.documentElement;
-    const customStyle: HTMLLinkElement = document.createElement('link');
-    customStyle.href = 'http://intratest.infra.energie.local/Style%20Library/custom.css';
-    customStyle.rel = 'stylesheet';
-    customStyle.type = 'text/css';
-    head.insertAdjacentElement('beforeEnd', customStyle);
-    console.log('loaded ' + customStyle.href);
     return Promise.resolve();
   }
 }
