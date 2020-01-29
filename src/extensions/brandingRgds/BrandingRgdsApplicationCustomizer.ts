@@ -35,7 +35,7 @@ export default class BrandingRgdsApplicationCustomizer
       // tslint:disable-next-line: no-any
       const head: any = document.getElementsByTagName('head')[0] || document.documentElement;
       const customHomeStyle: HTMLLinkElement = document.createElement('link');
-      customHomeStyle.href = 'http://intratest.infra.energie.local/Style%20Library/customHome.css';
+      customHomeStyle.href = this.context.pageContext.web.absoluteUrl + '/Style%20Library/customHome.css';
       customHomeStyle.rel = 'stylesheet';
       customHomeStyle.type = 'text/css';
       head.insertAdjacentElement('beforeEnd', customHomeStyle);
@@ -44,7 +44,7 @@ export default class BrandingRgdsApplicationCustomizer
       // tslint:disable-next-line: no-any
       const head: any = document.getElementsByTagName('head')[0] || document.documentElement;
       const customHeaderStyle: HTMLLinkElement = document.createElement('link');
-      customHeaderStyle.href = 'http://intratest.infra.energie.local/Style%20Library/customHeader.css';
+      customHeaderStyle.href = this.context.pageContext.web.absoluteUrl + '/Style%20Library/customHeader.css';
       customHeaderStyle.rel = 'stylesheet';
       customHeaderStyle.type = 'text/css';
       head.insertAdjacentElement('beforeEnd', customHeaderStyle);
